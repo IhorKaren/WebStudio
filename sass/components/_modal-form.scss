@@ -26,10 +26,10 @@
     line-height: 1.16;
     letter-spacing: 0.01em;
   
-    transition: border-color 250ms $titing-function;
+    transition: border-color 250ms $timing-function;
 
     &:focus-within {
-      border-color: $accent-color;
+      border-color: var(--accent-color);
     }
   }
   
@@ -45,10 +45,10 @@
     left: 5%;
   
     transform: translate(-50%, -50%);
-    transition: fill 250ms $titing-function;
+    transition: fill 250ms $timing-function;
 
     .modal-form__field:focus-within & {
-        fill: $accent-color;  
+        fill: var(--accent-color);  
     }
   }
   
@@ -84,19 +84,19 @@
     display: block;
     margin-left: 4px;
     
-    color: $accent-color;
+    color: var(--accent-color);
   }
   
   .form-accept__input {
     appearance: none;
 
     &:focus + .border__check {
-    border: 2px solid $accent-color;
+    border: 2px solid var(--accent-color);
     }
 
     &:checked + .border__check {
-        background-color: $accent-color;
-        border-color: $accent-color;
+        background-color: var(--accent-color);
+        border-color: var(--accent-color);
         background-origin: border-box;
       }
   }
@@ -110,8 +110,8 @@
     border: 2px solid #212121;
     border-radius: 2px;
   
-    transition: background-color 250ms $titing-function,
-    border-color 250ms $titing-function;
+    transition: background-color 250ms $timing-function,
+    border-color 250ms $timing-function;
   }
   
   .check__icon {
@@ -126,8 +126,8 @@
     min-width: 200px;
     height: 50px;
     
-    color: $secondary-text-color;
-    background-color: $accent-color;
+    color: var(--secondary-text-color);
+    background-color: var(--accent-color);
     border: none;
     border-radius: 4px;
   
@@ -138,8 +138,8 @@
   
     cursor: pointer;
   
-    transition: background-color 250ms $titing-function,
-    box-shadow 250ms $titing-function;
+    transition: background-color 250ms $timing-function,
+    box-shadow 250ms $timing-function;
 
     &:hover,
     &:focus {

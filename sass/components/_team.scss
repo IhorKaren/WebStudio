@@ -1,5 +1,5 @@
 .team {
-    background-color: $secondary-bg-color;
+    background-color: var(--secondary-bg-color);
     font-size: 16px;
     line-height: 1.18;
     text-align: center;
@@ -21,7 +21,7 @@
   .members__title {
     margin-top: 0;
     
-    color: $title-text-color;
+    color: var(--title-text-color);
     font-weight: 500;
     font-size: 16px;
     line-height: 1.18;

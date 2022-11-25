@@ -23,10 +23,10 @@
   
     text-decoration: none;
   
-    transition: color 250ms $titing-function;
+    transition: color 250ms $timing-function;
 
     &:hover,
     &:focus {
-    color: $accent-color;
+    color: var(--accent-color);
   }
   }

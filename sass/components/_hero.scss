@@ -25,7 +25,7 @@
     margin-top: 0;
     margin-bottom: 30px;
   
-    color: $secondary-text-color;
+    color: var(--secondary-text-color);
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -43,8 +43,8 @@
     border: none;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   
-    color: $secondary-text-color;
-    background-color: $accent-color;
+    color: var(--secondary-text-color);
+    background-color: var(--accent-color);
   
     font-family: inherit;
     font-weight: 700;
@@ -53,11 +53,11 @@
     letter-spacing: 0.06em;
     text-align: center;
   
-    transition: background-color 250ms $titing-function;
+    transition: background-color 250ms $timing-function;
 
     &:hover,
     &:focus {
-    color: $primary-bg-color;
+    color: var(--primary-bg-color);
     background-color: #188CE8;
   }
   }

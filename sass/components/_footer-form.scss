@@ -6,7 +6,7 @@
     display: block;
     margin-bottom: 20px;
   
-    color: $secondary-text-color;
+    color: var(--secondary-text-color);
   
     font-weight: 700;
     font-size: 14px; 
@@ -24,7 +24,7 @@
     line-height: 1.25;
     letter-spacing: 0.03em;
     
-    color: $secondary-text-color;
+    color: var(--secondary-text-color);
     background-color: #2F303A;
     border-radius: 4px;
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -41,8 +41,8 @@
     cursor: pointer;
     
   
-    color: $secondary-text-color;
-    background-color: $accent-color;
+    color: var(--secondary-text-color);
+    background-color: var(--accent-color);
     border: none;
     border-radius: 4px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -53,7 +53,7 @@
     line-height: 1.87;
     letter-spacing: 0.06em;
   
-    transition: background-color 250ms $titing-function;
+    transition: background-color 250ms $timing-function;
 
     &:hover,
     &:focus {

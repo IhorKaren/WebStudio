@@ -11,32 +11,32 @@
     padding-bottom: 32px;
     align-items: center;
   
-    color: $primary-text-color;
+    color: var(--primary-text-color);
     text-decoration: none;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
   
-    transition: color 250ms $titing-function;
+    transition: color 250ms $timing-function;
 
     &:hover,
     &:focus {
-    color: $accent-color;
+    color: var(--accent-color);
   }
   }
   
   
   
   .contact__icon {
-    fill: $primary-text-color;
+    fill: var(--primary-text-color);
     margin-right: 10px;
   
-    transition: fill 250ms $titing-function;
+    transition: fill 250ms $timing-function;
 
   .contact__link:hover &,
   .contact__link:focus & {
-    fill: $accent-color;
+    fill: var(--accent-color);
   }
   }
   

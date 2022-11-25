@@ -16,11 +16,11 @@
     height: 44px;
     width: 44px;
   
-    transition: background-color 250ms $titing-function;
+    transition: background-color 250ms $timing-function;
 
     &:hover,
     &:focus {
-    background-color: $accent-color;
+    background-color: var(--accent-color);
     border-radius: 50%;
   }
   }
@@ -30,7 +30,7 @@
     height: 20px;
     fill: #AFB1B8; 
   
-    transition: fill 250ms $titing-function;
+    transition: fill 250ms $timing-function;
 
   .socials__link:hover &,
   .socials__link:focus & {

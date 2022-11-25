@@ -14,7 +14,7 @@
     border-radius: 4px;
   
     transform: translate(-50%, -50%) scale(1);
-    transition: transform 250ms $titing-function;
+    transition: transform 250ms $timing-function;
   }
   
   .backdrop.is-hidden .modal {
@@ -35,11 +35,11 @@
     background-color: #FFFFFF;
     border: 1px solid rgba(0, 0, 0, 0.1);
   
-    transition: fill 250ms $titing-function;
+    transition: fill 250ms $timing-function;
 
     &:hover,
     &:focus {
-    fill: $accent-color;
+    fill: var(--accent-color);
   }
   }
   
@@ -47,7 +47,7 @@
     display: block; 
     margin-bottom: 12px;
   
-    color: $title-text-color;
+    color: var(--title-text-color);
     font-weight: 700;
     font-size: 20px;
     line-height: 1.17;

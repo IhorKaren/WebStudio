@@ -31,11 +31,11 @@
     height: 44px;
     width: 44px;
   
-    transition: background-color 250ms $titing-function;
+    transition: background-color 250ms $timing-function;
 
     &:hover,
     &:focus {
-    background-color: $accent-color;
+    background-color: var(--accent-color);
     border-radius: 50%;
   }
   }

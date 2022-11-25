@@ -1,5 +1,5 @@
 .logo {
-    color: $title-text-color;
+    color: var(--title-text-color);
   
     text-decoration: none;
     font-family: Raleway, sans-serif;
@@ -10,5 +10,5 @@
   }
 
   .logo__accent {
-    color: $accent-color;
+    color: var(--accent-color);
   }
