@@ -1,18 +1,25 @@
 .page-header {
-    // position: fixed;
     width: 100%;
-    top: 0;
-    left: 0;
     min-height: 80px;
-    z-index: 5;
+    
   
     background-color: #FFFFFF;
-    border-bottom: 1px solid #ececec; 
+    border-bottom: 1px solid #ececec;
+    
+    @media screen and (min-width: $tablet) {
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 5;
+    }
   }
 
-  // .page-header__container {
-  //   display: flex;
-  // }
+  .page-header__container {
+    @media screen and (min-width: $tablet) {
+    display: flex;
+    align-items: center;
+  }
+  }
 
   .header-button {
     position: absolute;
@@ -21,6 +28,10 @@
 
     background-color: transparent;
     border: none;
+
+    @media screen and (min-width: $tablet) {
+      display: none;
+    }
   }
 
   .header-button__cross {

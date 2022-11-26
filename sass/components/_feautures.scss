@@ -20,9 +20,13 @@
     }
   }
 
-  @media screen and (min-width: $tablet) {
-    .feautures__item {
-      flex-basis: calc((100% - 30px) / 2);
+  .feautures__item {
+    @media screen and (min-width: $tablet) {
+    flex-basis: calc((100% - 30px) / 2); 
+  }
+
+    @media screen and (min-width: $desctop) {
+    flex-basis: calc((100% - 90px) / 4);
     }
   }
   

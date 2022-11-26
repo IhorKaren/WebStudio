@@ -1,7 +1,6 @@
 .filter {
     display: flex;
     flex-wrap: wrap;
-    // justify-content: center;
     margin-bottom: 50px;
     gap: 8px;
   
@@ -13,6 +12,10 @@
     letter-spacing: 0.03em;
 
     @extend %list;
+
+    @media screen and (min-width: $tablet) {
+      justify-content: center;
+    }
   }
   
   .filter__btn {

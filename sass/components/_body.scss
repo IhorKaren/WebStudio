@@ -10,13 +10,16 @@
 
 body {
     margin: 0;
-    // padding-top: 80px;
     
     color: var(--primary-text-color);
     background-color: #ffffff;
   
     font-family: roboto, sans-serif;
     letter-spacing: 0.03em;
+
+    @media screen and (min-width: $tablet) {
+      padding-top: 80px;
+    }
   }
   
 *,

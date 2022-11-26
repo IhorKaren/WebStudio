@@ -50,11 +50,6 @@
     .modal-form__field:focus-within & {
         fill: var(--accent-color);  
     }
-
-    @media screen and (max-width: $tablet) {
-      top: 50%;
-      left: 7%;
-    }
   }
   
   .modal-form__area {
@@ -84,13 +79,14 @@
     font-size: 12px;
     line-height: 1.17;
   
-    // font-size: 14px;
-    // line-height: 1.71;
+    @media screen and (min-width: $desctop) {
+      font-size: 14px;
+      line-height: 1.71;
+    } 
   }
   
   .accept__link {
-    display: block;
-    margin-left: 4px;
+    
     
     color: var(--accent-color);
   }

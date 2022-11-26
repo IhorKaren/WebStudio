@@ -1,11 +1,15 @@
 .footer-form {
-    // margin-left: auto;
-    @media screen and (min-width: $tablet) {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-    }
+  @media screen and (min-width: $tablet) and (max-width: 1199px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: auto;
   }
+
+  @media screen and (min-width: $tablet) {
+    margin-left: auto; 
+  } 
+}
   
   .footer-form__title {
     display: block;
@@ -40,6 +44,10 @@
     @media screen and (min-width: $tablet) {
       width: 450px;
     }
+
+    @media screen and (min-width: $desctop) {
+      width: 358px;
+    } 
   }
   
   .footer-form__button {
@@ -84,4 +92,8 @@
     margin-left: auto;
     margin-right: auto;
   }
+
+  @media screen and (min-width: $desctop) {
+    margin: 0;
+  } 
   }
