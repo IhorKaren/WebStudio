@@ -8,12 +8,17 @@
   }
   
   .page-footer__container {
-    // display: flex;
-    // align-items: baseline;
-
-    @media screen and (max-width: $mobile) {
+    @media screen and (max-width: 767px) {
       text-align: center;
-    } 
+    }
+    
+    @media screen and (min-width: $tablet) {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: baseline;
+      text-align: center;
+      justify-content: space-around;
+    }
   }
   
   .page-footer__logo {

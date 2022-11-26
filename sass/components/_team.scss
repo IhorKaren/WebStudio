@@ -6,17 +6,17 @@
   }
   
   .members {
-    // display: flex;
-    // flex-wrap: wrap;
-    // gap: $card-set-gap;
+    @media screen and (min-width: $tablet) {
+      display: flex;
+      flex-wrap: wrap;
+      gap: $card-set-gap;
+    }
 
     @extend %list;
   }
 
   .members__icon {
-    @media screen and (max-width: $mobile) {
-      width: 100%;
-    }
+    width: 100%;
   }
   
   .members__card {
@@ -34,8 +34,10 @@
   }
   
   .members__item {
-    // flex-basis: calc((100% - 90px) / 4);
-  
+    @media screen and (min-width: $tablet) {
+      flex-basis: calc((100% - 30px) / 2);
+    }
+
     background-color: #ffffff;
     border-radius: 0px 0px 4px 4px;
     box-shadow: 
