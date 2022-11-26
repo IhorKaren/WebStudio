@@ -1,6 +1,9 @@
 .footer-socials {
-    display: block;
-    flex-wrap: wrap;
+    // display: block;
+    // flex-wrap: wrap;
+    @media screen and (max-width: $mobile) {
+      margin-bottom: 60px;
+    } 
   }
   
   .footer-socials__title {

@@ -1,5 +1,5 @@
 .page-header {
-    position: fixed;
+    // position: fixed;
     width: 100%;
     top: 0;
     left: 0;
@@ -7,9 +7,30 @@
     z-index: 5;
   
     background-color: #FFFFFF;
-    border-bottom: 1px solid #ececec;
+    border-bottom: 1px solid #ececec; 
   }
 
-  .page-header__container {
-    display: flex;
+  // .page-header__container {
+  //   display: flex;
+  // }
+
+  .header-button {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+
+    background-color: transparent;
+    border: none;
+  }
+
+  .header-button__cross {
+    display: none;
+  }
+
+  .header-button.is-open .header-button__cross {
+    display: block;
+  }
+
+  .header-button.is-open .header-button__menu {
+    display: none;
   }

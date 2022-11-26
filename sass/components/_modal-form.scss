@@ -43,12 +43,17 @@
     position: absolute;
     top: 50%;
     left: 5%;
-  
+    
     transform: translate(-50%, -50%);
     transition: fill 250ms $timing-function;
 
     .modal-form__field:focus-within & {
         fill: var(--accent-color);  
+    }
+
+    @media screen and (max-width: $tablet) {
+      top: 50%;
+      left: 7%;
     }
   }
   
@@ -76,8 +81,13 @@
     margin-top: 20px;
     margin-bottom: 30px;
   
-    font-size: 14px;
-    line-height: 1.71;
+    // font-size: 14px;
+    // line-height: 1.71;
+
+    @media screen and (max-width: 1199px) {
+      font-size: 12px;
+      line-height: 1.17;
+    } 
   }
   
   .accept__link {

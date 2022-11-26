@@ -23,9 +23,21 @@
     <!--Header-->
     <header class="page-header">
       <div class="container page-header__container">
+        <a href="./" class="logo"><span class="logo__accent">Web</span>Studio</a>
+        <button type="button" 
+        class="header-button"
+        aria-expanded="false"
+        aria-label="Перемикач мобільного меню"
+        data-menu-button
+        >
+          <svg 
+          width="40" 
+          height="40"
+          >
+            <use class="header-button__cross" href="./images/symbol-defs.svg#close-menu"></use>
+            <use class="header-button__menu" href="./images/symbol-defs.svg#menu"></use>
+        </button>
         <nav class="site-nav">
-          <a href="./" class="logo"><span class="logo__accent">Web</span>Studio</a>
-
           <ul class="site-nav__list">
             <li class="site-nav__item">
               <a href="./index.html" class="site-nav__link site-nav__link--active">Студія</a>
@@ -161,7 +173,7 @@
           <h2 class="section-title">Наша команда</h2>
           <ul class="members">
             <li class="members__item">
-              <img src="./images/ihor.jpg" alt="Ігор Дем'яненко" width="270" height="260" />
+              <img class="members__icon" src="./images/ihor.jpg" alt="Ігор Дем'яненко" width="270" height="260" />
               <div class="members__card">
                 <h3 class="members__title">Ігор Дем'яненко</h3>
                 <p class="members__text" lang="en">Product Designer</p>
@@ -198,7 +210,7 @@
               </div>
             </li>
             <li class="members__item">
-              <img src="./images/olha.jpg" alt="Ольга Рєпіна" width="270" height="260" />
+              <img class="members__icon" src="./images/olha.jpg" alt="Ольга Рєпіна" width="270" height="260" />
               <div class="members__card">
                 <h3 class="members__title">Ольга Рєпіна</h3>
                 <p class="members__text" lang="en">Frontend Developer</p>
@@ -235,7 +247,7 @@
               </div>
             </li>
             <li class="members__item">
-              <img src="./images/mykola.jpg" alt="Микола Тарасов" width="270" height="260" />
+              <img class="members__icon" src="./images/mykola.jpg" alt="Микола Тарасов" width="270" height="260" />
               <div class="members__card">
                 <h3 class="members__title">Микола Тарасов</h3>
                 <p class="members__text" lang="en">Marketing</p>
@@ -272,7 +284,7 @@
               </div>
             </li>
             <li class="members__item">
-              <img src="./images/myhailo.jpg" alt="Михайло Єрмаков" width="270" height="260" />
+              <img class="members__icon" src="./images/myhailo.jpg" alt="Михайло Єрмаков" width="270" height="260" />
               <div class="members__card">
                 <h3 class="members__title">Михайло Єрмаков</h3>
                 <p class="members__text" lang="en">UI Designer</p>
@@ -489,6 +501,7 @@
         </form>
       </div>
     </div>
+    <script src="./js/menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>

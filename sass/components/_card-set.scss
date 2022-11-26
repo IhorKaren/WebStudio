@@ -1,17 +1,24 @@
 .card-set {
-    display: flex;
-    flex-wrap: wrap;
-    gap: $card-set-gap;
+    // display: flex;
+    // flex-wrap: wrap;
+    // gap: $card-set-gap;
   
     font-size: 16px;
     line-height: 1.87;
 
-    @extend %list;
+    @extend %list; 
   }
   
-  .card-set__item {
-    flex-basis: calc((100% - 60px) / 3);
-  }
+  // .card-set__item {
+  //   flex-basis: calc((100% - 60px) / 3);
+  // }
+
+  
+    @media screen and (min-width: $mobile) {
+      .card-set__item:not(:last-child) {
+        margin-bottom: 30px;
+      }
+    }
   
   .card-set__link {
     display: block;

@@ -1,6 +1,12 @@
 .page-footer__nav {
     margin-right: 70px;
     width: 231px;
+
+    @media screen and (max-width: $mobile) {
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 60px;
+    } 
   }
   
   .page-footer__address {
@@ -13,9 +19,11 @@
   .page-footer__contacts {
     @extend %list;
 
-    .page-footer__item:not(:last-child) {
+    @media screen and (max-width: $mobile) {
+      .page-footer__item:not(:last-child) {
         margin-bottom: 9px;
       }
+    }
   }
   
   .page-footer__link {
