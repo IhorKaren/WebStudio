@@ -13,6 +13,10 @@
 
     @extend %list;
 
+    @media screen and (max-width: 767px) {
+      width: 326px;
+    }
+
     @media screen and (min-width: $tablet) {
       justify-content: center;
     }
