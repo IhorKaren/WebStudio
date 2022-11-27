@@ -1,13 +1,13 @@
 .page-header {
-    width: 100%;
-    min-height: 80px;
+  width: 100%;
+  min-height: 60px;
     
-  
-    background-color: #FFFFFF;
-    border-bottom: 1px solid #ececec;
+  background-color: #FFFFFF;
+  border-bottom: 1px solid #ececec;
     
     @media screen and (min-width: $tablet) {
       position: fixed;
+      min-height: 80px;
       top: 0;
       left: 0;
       z-index: 5;
@@ -15,16 +15,21 @@
   }
 
   .page-header__container {
+    padding-top: 16px;
+    padding-bottom: 16px;
+
     @media screen and (min-width: $tablet) {
     display: flex;
     align-items: center;
+    padding: 0;
   }
-  }
+}
 
   .header-button {
     position: absolute;
     top: 10px;
     right: 15px;
+    z-index: 6;
 
     background-color: transparent;
     border: none;
@@ -40,6 +45,7 @@
 
   .header-button.is-open .header-button__cross {
     display: block;
+    fill: var(--accent-color);
   }
 
   .header-button.is-open .header-button__menu {
