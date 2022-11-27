@@ -2,6 +2,7 @@
   position: fixed;
   width: 100%;
   min-height: 60px;
+  z-index: 9;
     
   background-color: #FFFFFF;
   border-bottom: 1px solid #ececec;
@@ -10,7 +11,6 @@
       min-height: 80px;
       top: 0;
       left: 0;
-      z-index: 5;
     }
   }
 
