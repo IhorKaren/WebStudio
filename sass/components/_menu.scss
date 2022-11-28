@@ -19,6 +19,10 @@
       &.is-open {
         transform: translateX(0);
       }
+
+      @media screen and (max-width: 479px) {
+        padding: 48px 15px;
+      }
     }
 
   @media screen and (min-width: $tablet) {
