@@ -2,13 +2,17 @@
   text-align: center;
 
   @extend %list;
+  }
 
   @media screen and (min-width: $tablet) {
+    .feautures__list {
     display: flex;
     flex-wrap: wrap;
     gap: $card-set-gap;
-   }
+
+    text-align: start
   }
+}
 
   .visually-hidden {
     @extend %visually-hidden;

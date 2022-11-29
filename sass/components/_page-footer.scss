@@ -8,15 +8,12 @@
   }
   
   .page-footer__container {
-    @media screen and (max-width: 767px) {
-      text-align: center;
-    }
+    text-align: center;
     
     @media screen and (min-width: $tablet) {
       display: flex;
       flex-wrap: wrap;
       align-items: baseline;
-      text-align: center;
       justify-content: space-around;
     }
 
