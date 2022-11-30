@@ -14,7 +14,7 @@
     @extend %list;
 
     @media screen and (max-width: 767px) {
-      width: 326px;
+      max-width: 326px;
     }
 
     @media screen and (min-width: $tablet) {
