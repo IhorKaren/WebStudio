@@ -77,6 +77,12 @@
     border-bottom: 1px solid #EEEEEE;
   }
 
+  @media screen and (min-width: $tablet) and (max-width: 1199px) {
+    .card-set__info--big {
+      padding-bottom: 56px;
+    }
+  } 
+
   .card-set__title {
     margin-top: 0;
     margin-bottom: 10px;
