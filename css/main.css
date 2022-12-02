@@ -456,10 +456,16 @@ img {
   }
 }
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   font-size: 14px;
   line-height: 1.71;
+}
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .section-title {
@@ -706,6 +712,7 @@ img {
 
 .members__title {
   margin-top: 0;
+  margin-bottom: 10px;
   color: var(--title-text-color);
   font-weight: 500;
   font-size: 16px;
@@ -1485,10 +1492,15 @@ img {
 
 .card-set__text {
   margin: 0;
-  padding: 63px 24px 0 24px;
+  padding: 77px 24px 0 24px;
   font-size: 18px;
   line-height: 1.5555;
   color: var(--secondary-text-color);
+}
+@media screen and (min-width: 768px) {
+  .card-set__text {
+    padding-top: 63px;
+  }
 }
 
 .card-set__info {
