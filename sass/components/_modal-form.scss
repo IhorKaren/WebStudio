@@ -42,13 +42,17 @@
   .modal-form__icon {
     position: absolute;
     top: 50%;
-    left: 5%;
+    left: 7%;
     
     transform: translate(-50%, -50%);
     transition: fill 250ms $timing-function;
 
     .modal-form__field:focus-within & {
         fill: var(--accent-color);  
+    }
+
+    @media screen and (min-width: $tablet) {
+      left: 5%;
     }
   }
   

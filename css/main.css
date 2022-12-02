@@ -1240,7 +1240,7 @@ img {
 .modal-form__icon {
   position: absolute;
   top: 50%;
-  left: 5%;
+  left: 7%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -1248,6 +1248,11 @@ img {
 }
 .modal-form__field:focus-within .modal-form__icon {
   fill: var(--accent-color);
+}
+@media screen and (min-width: 768px) {
+  .modal-form__icon {
+    left: 5%;
+  }
 }
 
 .modal-form__area {
