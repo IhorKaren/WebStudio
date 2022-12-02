@@ -19,7 +19,7 @@
     <title>Web Studio</title>
   </head>
 
-  <body>
+  <body data-no-scroll>
     <!--Header-->
     <header class="page-header">
       <div class="container page-header__container">
@@ -546,14 +546,15 @@
           </div>
           <label class="modal-form__accept">
             <input class="form-accept__input" type="checkbox" name="agreement" />
-            <span class="border__check">
-              <svg class="check__icon" width="16" height="15">
+            <span class="form-accept__border">
+              <svg class="form-accept__icon" width="16" height="15">
                 <use href="./images/symbol-defs.svg#check"></use>
               </svg>
             </span>
-            Погоджуюся з розсилкою та приймаю<a class="accept__link link" href="#"
+            <div class="form-accept__text"> Погоджуюся з розсилкою та приймаю<a class="accept__link link" href="#"
               >Умови договору</a
             >
+          </div>
           </label>
           <button class="modal-form__button" type="submit">Відправити</button>
         </form>

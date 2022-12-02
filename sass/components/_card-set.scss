@@ -54,8 +54,8 @@
     transform: translateY(101%);
     transition: transform 250ms $timing-function;
 
-    .card-set__item:hover &,
-    .card-set__item:focus & {
+    .card-set__link:hover &,
+    .card-set__link:focus & {
     transform: translateY(0);
   }
   }
