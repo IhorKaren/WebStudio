@@ -28,7 +28,9 @@
     }
   
   .card-set__link {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
   
     transition: box-shadow 250ms $timing-function;
 
@@ -73,17 +75,12 @@
   }
   
   .card-set__info {
+    flex-grow: 1;
     padding: 20px 24px 20px 24px;
     border-left: 1px solid #EEEEEE;
     border-right: 1px solid #EEEEEE;
     border-bottom: 1px solid #EEEEEE;
   }
-
-  @media screen and (min-width: $tablet) and (max-width: 1199px) {
-    .card-set__info--big {
-      padding-bottom: 56px;
-    }
-  } 
 
   .card-set__title {
     margin-top: 0;
